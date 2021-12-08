@@ -144,3 +144,7 @@ body {
 .float-end{
   font-family: cursive;
 }
+
+.name{
+  font-size: 20px;
+}
