@@ -8,9 +8,10 @@ body {
   color: #5a5a5a;
 }
 
-.rogin{
+.log{
   align-items: center;
   margin-left: 10px;
+  font-size: 20px;
 }
 
 /* CUSTOMIZE THE CAROUSEL
@@ -128,8 +129,10 @@ body {
 
 
 
-.navbar-brand{
+.navbar-brant{
   font-family: cursive;
+  font-size: 20px;
+  color: white;
 }
 
 .carousel-caption {
