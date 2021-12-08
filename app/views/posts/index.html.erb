@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+   
+
+
+    
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">fish-spot</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class=flat-header>
+          
+            <a class="nav-link" aria-current="page" href="#">ログイン</a>
+            <a class="nav-link" href="#">新規登録</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+      <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+      <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+      <li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
+      
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <svg class="bd-placeholder-img" width="100%" height="100%"    ><%= image_tag "IMG_0292.jpeg"%></svg>
+
+        <div class="container">
+          <div class="carousel-caption">
+            <p>館鼻漁港</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%"    ><%= image_tag "IMG_0293.jpeg"%></svg>
+        <div class="container">
+          <div class="carousel-caption">
+            <p>館鼻漁港 漁船</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%"    ><%= image_tag "IMG_0286.jpeg"%></svg>
+        <div class="container">
+          <div class="carousel-caption ">
+            <p>フェリー埠頭</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%"    ><%= image_tag "IMG_0287.jpeg"%></svg>
+        <div class="container">
+          <div class="carousel-caption ">
+            <p>蕪嶋神社</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </a>
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+   <div class="body">
+       <div class="tokuchou">
+         <h2><span class="blue">fish-spot</span>の特徴</h2>  
+       
+      </div>
+      
+    </div>
+        <div class="flat-body">
+        <div class="col-lg-4">
+          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" ><%= image_tag "fishing_fish_man.png", size: "450x400"  %></svg>
+          <h2>情報共有をしよう！</h2>
+          <p class="font-size">釣った魚をリアルタイムで報告し合える</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" ><%= image_tag "釣りスポット.png", size: "450x400"  %></svg>
+          <h2>釣りスポットを共有しよう！</h2>
+          <p class="font-size">八戸近郊の釣りスポット、おすすめの時間を共有し合える</p>
+        </div>
+        </div>
+    <!-- /.row -->
+
+
+
+    <!-- START THE FEATURETTES -->
+
+    <div class="fish-flat">
+      <div class="row featurette">
+        <h2 class="featurette-heading">投稿一覧実装予定 </h2>
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300" height="300"><rect width="80%" height="80%" fill="#eee"/></svg>
+      </div>
+    
+      <div class="row featurette">
+        <h2 class="featurette-heading">地図機能を実装予定</h2>
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300" height="300" ><rect width="80%" height="80%" fill="#eee"/></svg>
+      </div>
+    </div>
+
+  
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-end"><a href="#">fish-spot</a></p>
+    <p> <a href="#">特徴</a> &middot; <a href="#">投稿一覧</a></p>
+  </footer>
+</main>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>
