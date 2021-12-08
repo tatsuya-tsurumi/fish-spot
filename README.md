@@ -22,3 +22,49 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+## テーブル設計
+
+## usersテーブル
+
+| Colum                           | Type   |Options                    |
+| --------------------------------| ------ | ------------------------- |
+| email                           | string | null: false, unique: true |
+| encrypted_password              | string | null: false               |
+| encrypted_password_confirmation | string | null: false               |
+| nickname                        | string | null: false               |
+| last_name                       | string | null: false               |
+| first_name                      | string | null: false               |
+| birthday                        | date   | null: false               |
+
+has_many :posts
+has_many :message_rooms
+
+## postsテーブル
+
+| Colum                     | Type       |Options                        |
+| --------------------------| -----------| ----------------------------- |
+| title                     | string     | null: false                   | 
+| aimable_fish              | string     | null: false                   |
+| time_zone                 | integer    | null: false                   | 
+| trick                     | string     | null: false                   | 
+| user                      | references | null: false foreign_key: true |
+
+belongs_to :user
+has_many :message_rooms
+
+## message_roomsテーブル
+| Colum                 | Type       |Options                        |
+| ----------------------| ---------- | ----------------------------- |
+| messege               | text       | null: false                   |
+| user                  | references | null: false foreign_key: true |
+| item                  | references | null: false foreign_key: true |
+
+
+belongs_to :user
+belongs_to :post
+
+
+
+
+
