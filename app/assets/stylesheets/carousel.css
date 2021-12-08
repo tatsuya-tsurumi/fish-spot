@@ -8,6 +8,10 @@ body {
   color: #5a5a5a;
 }
 
+.rogin{
+  align-items: center;
+  margin-left: 10px;
+}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
