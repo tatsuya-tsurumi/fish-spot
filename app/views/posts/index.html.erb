@@ -11,21 +11,7 @@
   </head>
   <body>
     
-<header>
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">fish-spot</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-        <div class=flat-header>
-          
-            <a class="nav-link" aria-current="page" href="#">ログイン</a>
-            <a class="nav-link" href="#">新規登録</a>
-      </div>
-    </div>
-  </nav>
-</header>
+<%= render "shared/header" %>
 
 <main>
 
@@ -136,10 +122,7 @@
 
 
   <!-- FOOTER -->
-  <footer class="container">
-    <p class="float-end"><a class="name" href="#">fish-spot</a></p>
-    <p> <a class="name" href="#">特徴</a> &middot; <a class="name" href="#">投稿一覧</a></p>
-  </footer>
+ <%= render "shared/footer" %>
 </main>
 
 
