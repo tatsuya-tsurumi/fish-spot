@@ -42,23 +42,24 @@ has_many :message_rooms
 
 ## postsテーブル
 
-| Colum                     | Type       |Options                        |
-| --------------------------| -----------| ----------------------------- |
-| title                     | string     | null: false                   | 
-| aimable_fish              | string     | null: false                   |
-| time_zone                 | integer    | null: false                   | 
-| trick                     | string     | null: false                   | 
-| user                      | references | null: false foreign_key: true |
+| Colum              | Type       |Options                        |
+| -------------------| -----------| ----------------------------- |
+| title              | string     | null: false                   |
+| aimable_fish       | string     | null: false                   |
+| time_zone          | integer    | null: false                   |
+| trick              | string     | null: false                   |
+| comment            |text        |null: false                    |
+| user               | references | null: false foreign_key: true |
 
 belongs_to :user
 has_many :message_rooms
 
 ## message_roomsテーブル
-| Colum                 | Type       |Options                        |
-| ----------------------| ---------- | ----------------------------- |
-| messege               | text       | null: false                   |
-| user                  | references | null: false foreign_key: true |
-| item                  | references | null: false foreign_key: true |
+| Colum             | Type       |Options                        |
+| ------------------| ---------- | ----------------------------- |
+| messege           | text       | null: false                   |
+| user              | references | null: false foreign_key: true |
+| item              | references | null: false foreign_key: true |
 
 
 belongs_to :user
