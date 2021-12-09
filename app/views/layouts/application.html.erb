@@ -10,7 +10,17 @@
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   </head>
 
+  <header>
+   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <%= link_to "fish-spot", root_path, class:"navbar-brant" %>
+  </header>
+
   <body>
     <%= yield %>
   </body>
+
+  
+
+
 </html>

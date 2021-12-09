@@ -1,15 +1,24 @@
+<head>
+<link href="carousel.css" rel="stylesheet">
+</head>
 <header>
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">fish-spot</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <a class="navbar-brant" href="#">fish-spot</a>
+      <% if user_signed_in?%>
         <div class=flat-header>
-          
-            <a class="nav-link" aria-current="page" href="#">ログイン</a>
-            <a class="nav-link" href="#">新規登録</a>
-      </div>
-    </div>
+           <%= link_to "#{current_user.nickname}さん", root_path, class: :log%>
+            <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "log" %> 
+         </div>
+      <% else %>
+          <div class=flat-header>
+            <%= link_to 'ログイン', new_user_session_path, class: "log" %>
+            <%= link_to '新規登録', new_user_registration_path, class: "log" %>
+          </div>
+      <% end %>
+      
+      
+    
   </nav>
 </header>
+
