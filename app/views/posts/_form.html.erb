@@ -1,4 +1,7 @@
-<%= form_with model: @item, local: true do |f|%>
+<%= form_with model: @post, local: true do |f|%>
+
+
+
   <div class="field">
     <%= f.label :title, "タイトル" %><br />
     <%= f.text_field :title, id:"title" %>
@@ -10,8 +13,8 @@
   </div>
 
   <div class="field">
-    <%= f.label :time_zone, "狙える時間帯" %><br />
-    <%= f.text_area :time_zone, class: :foo, id:"time_zone" %>
+    <%= f.label :time_zone_id, "狙える時間帯" %><br />
+    <%= f.collection_select(:time_zone_id, TimeZone.all, :id, :name, {}, {class: "foo"}) %>
   </div>
 
   <div class="field">
