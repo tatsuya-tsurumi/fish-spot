@@ -1,0 +1,35 @@
+<%= form_with model: @item, local: true do |f|%>
+  <div class="field">
+    <%= f.label :title, "タイトル" %><br />
+    <%= f.text_field :title, id:"title" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :aimble_fish, "狙える魚の種類" %><br />
+    <%= f.text_area :aimble_fish, class: :foo, id:"aimable_fish" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :time_zone, "狙える時間帯" %><br />
+    <%= f.text_area :time_zone, class: :foo, id:"time_zone" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :trick, "おすすめの仕掛け（任意）" %><br />
+    <%= f.text_field :trick, class: :foo, id:"trick" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :comment, "場所の紹介（任意）" %><br />
+    <%= f.text_area :comment, class: :foo, id:"comment", placeholder:"一言メッセージ" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :image, "スポットの画像" %><br />
+    <%= f.file_field :image, id:"image" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "保存する", class: :form__btn  %>
+  </div>
+<% end %>
