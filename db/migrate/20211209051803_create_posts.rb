@@ -3,7 +3,7 @@ class CreatePosts < ActiveRecord::Migration[6.0]
     create_table :posts do |t|
       t.string :title, null: false
       t.string :aimble_fish, null: false
-      t.integer :time_zone, null: false
+      t.integer :time_zone_id, null: false
       t.string :trick
       t.text :comment
       t.references :user, null: false, foreign_key: true

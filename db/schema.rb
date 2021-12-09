@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(version: 2021_12_09_053416) do
   create_table "posts", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "title", null: false
     t.string "aimble_fish", null: false
-    t.integer "time_zone", null: false
+    t.integer "time_zone_id", null: false
     t.string "trick"
     t.text "comment"
     t.bigint "user_id", null: false
