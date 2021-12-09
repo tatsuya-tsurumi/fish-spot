@@ -11,6 +11,7 @@
         <div class=flat-header>
            <%= link_to "#{current_user.nickname}さん", root_path, class: :log%>
             <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "log" %> 
+            <%= link_to '投稿', new_post_path,  class: "log" %> 
          </div>
       <% else %>
           <div class=flat-header>
