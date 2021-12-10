@@ -90,10 +90,7 @@ text-decoration: none;
 /* Featurettes
 ------------------------- */
 
-.fish-flat{
-  display: flex;
 
-}
 
 
 
@@ -187,4 +184,18 @@ text-decoration: none;
     
     margin-bottom: 5px;
   }
+
+  .flex{
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: underline;
+  }
+
+  .fish-flat{
+    display: flex;
+  }
+
+  
+  
+  
   
