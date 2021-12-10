@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
-  bedore_action :set_post, only: [:show, :edit]
-
+  before_action :set_post, only: [:show, :edit,:update]
+  before_action :authenticate_user!, except: [:index, :show]
 
   def index
     @post = Post.order('created_at ASC')      
@@ -24,12 +24,22 @@ class PostsController < ApplicationController
 
   def show
     
+    
   end
 
   def edit
+    unless @post.user_id == current_user.id
+      redirect_to root_path
+    end
   end
 
   def update
+    @post.update(post_params)
+    if @post.save
+      redirect_to root_path
+    else
+      render :edit
+    end
   end
 
   private
