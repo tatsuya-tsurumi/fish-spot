@@ -16,5 +16,7 @@ class User < ApplicationRecord
           validates :first_name
         end
            validates :birthday, presence: true
+
+  has_many :posts
          
 end

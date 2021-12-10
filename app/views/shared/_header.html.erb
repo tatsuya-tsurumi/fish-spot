@@ -1,4 +1,5 @@
 
+
 <header>
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
@@ -6,7 +7,15 @@
       <% if user_signed_in?%>
         <div class=flat-header>
            <%= link_to "#{current_user.nickname}さん", root_path, class: :log%>
-            <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "log" %> 
+            <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "log" %>
+
+            
+            
+            
+
+
+
+
          </div>
       <% else %>
           <div class=flat-header>
@@ -14,7 +23,13 @@
             <%= link_to '新規登録', new_user_registration_path, class: "log" %>
           </div>
       <% end %>
-      
+
+      <%= link_to(new_post_path, class: 'purchase-btn') do %>
+      <span class='purchase-btn-text'>新規投稿</span>
+     
+      <% end %>
+
+
       
     
   </nav>
