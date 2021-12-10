@@ -1,4 +1,7 @@
 class PostsController < ApplicationController
+  bedore_action :set_post, only: [:show, :edit]
+
+
   def index
     @post = Post.order('created_at ASC')      
     #order('created_at DESC').limit(2) 最新の２つの投稿を載せる場合に使う
@@ -20,7 +23,7 @@ class PostsController < ApplicationController
   end
 
   def show
-    @post = Post.find(params[:id])
+    
   end
 
   def edit
@@ -33,6 +36,10 @@ class PostsController < ApplicationController
 
   def post_params
     params.require(:post).permit(:image, :title, :aimble_fish, :time_zone_id, :trick, :comment).merge(user_id: current_user.id ) 
+  end
+
+  def set_post
+    @post = Post.find(params[:id])
   end
 
 end
