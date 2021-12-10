@@ -1,0 +1,10 @@
+ja:
+  activerecord:
+    models:
+      post: 投稿
+    attributes:
+      post:
+        image: 写真
+        title: タイトル
+        aimble_fish: 狙える魚
+        time_zone_id: 時間帯

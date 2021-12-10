@@ -16,7 +16,7 @@
         <%= link_to 'チャットする', "#" %>
         <% if current_user == @post.user %>
         <%= link_to '編集', edit_post_path %>
-        <%= link_to '削除', "#" %>
+        <%= link_to '削除', post_path, method: :delete %>
         <% end %>
 
 

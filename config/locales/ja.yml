@@ -2,6 +2,7 @@ ja:
   activerecord:
     models:
       user: ユーザー
+      post: 投稿
     attributes:
       user:
         nickname: ニックネーム
@@ -12,8 +13,4 @@ ja:
         password: パスワード
         password_confirmation: パスワード（確認用）
 
-        post:
-        image: 写真
-        title: タイトル
-        aimble_fish: 狙える魚
-        time_zone_id: 時間帯
+      
