@@ -1,11 +1,12 @@
 <% @post.each do |post| %>
       <div class="flex" >
       <%#item_path(item.id)%>
-        <%= link_to  "#" do %> 
+        <%= link_to   post_path(post.id) do  %> 
         <p class="post_all">タイトル：<%= post.title %></p>
         <p><%= image_tag post.image, size:"400x400" %></p>
              <% end %>
         <p class="post_all">狙える魚：<%= post.aimble_fish%>
+        
         <p class="post_all">投稿者：<%=post.user.nickname%></p>
 
       </div>
