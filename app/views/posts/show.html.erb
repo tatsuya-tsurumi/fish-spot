@@ -15,7 +15,7 @@
         <%if user_signed_in?%>
         <%= link_to 'チャットする', "#" %>
         <% if current_user == @post.user %>
-        <%= link_to '編集', "#" %>
+        <%= link_to '編集', edit_post_path %>
         <%= link_to '削除', "#" %>
         <% end %>
 
