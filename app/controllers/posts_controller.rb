@@ -1,5 +1,7 @@
 class PostsController < ApplicationController
   def index
+    @post = Post.order('created_at ASC')      
+    #order('created_at DESC').limit(2) 最新の２つの投稿を載せる場合に使う
   end
 
   def new
