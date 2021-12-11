@@ -57,9 +57,9 @@ has_many :messages
 ## messagesテーブル
 | Colum             | Type       |Options                        |
 | ------------------| ---------- | ----------------------------- |
-| messege           | text       | null: false                   |
+| message           | text       | null: false                   |
 | user              | references | null: false foreign_key: true |
-| item              | references | null: false foreign_key: true |
+| post              | references | null: false foreign_key: true |
 
 
 belongs_to :user
