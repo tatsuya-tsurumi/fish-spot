@@ -1,5 +1,19 @@
 <div class= "room_header">
-<h1>ルーム名<%= @post.title %></h1>
+<h1 class= "header_left">ルーム名：<%= @post.title %></h1>
 
-<p><%= link_to '退出', post_path(@post) %></>
+
+<%= link_to(post_path(@post), class: 'purchase-btns') do %>
+      <span class='purchase-btn-texts'>退出</span>
+      <% end %>
 </div>
+
+<%= form_with model: [@post,@message], class: 'form', local: true do |f| %>
+<div class="form-input">
+    <%= f.text_field :message, class: 'form-message', placeholder: 'type a message' %>
+    <label class="form-image">
+      <span class="image-file">画像</span>
+      <%= f.file_field :image, id:"image" %>
+    </label>
+</div>
+  <%= f.submit '送信', class: 'form-submit' %>
+<% end %>
