@@ -248,6 +248,15 @@ text-decoration: none;
     
   }
 
+  .room_header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+  }
+
+  .room_header p {
+    color: red;
+  }
   
   
   

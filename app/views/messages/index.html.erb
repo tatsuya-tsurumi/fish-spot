@@ -1,1 +1,5 @@
-<%#= link_to '退出', post_path %>
+<div class= "room_header">
+<h1>ルーム名<%= @post.title %></h1>
+
+<p><%= link_to '退出', post_path(@post) %></>
+</div>
