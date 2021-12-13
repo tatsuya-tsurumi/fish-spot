@@ -205,9 +205,9 @@ text-decoration: none;
 
   }*/
 
-  .posts_all{
-    font-size: 20px;
-    font-weight: bold;
+  .post_all :hover{
+    background-color: cornflowerblue;
+
   }
 
   .pictue{
@@ -287,6 +287,61 @@ text-decoration: none;
     
     margin-bottom: 5px;
   }
+
+  .positon :hover{
+    background-color: cornflowerblue;
+
+  }
+
+  .message-top{
+    height: 90vh;
+    background-color: #cddceb;
+    overflow: scroll;
+    margin-top: 10px;
+   
+  }
+
+  .message-list{
+    display: flex;
+    margin-top: 10px;
+  }
+
+  
+  
+
+  
+
+  .form-image {
+    font-size: 12px;
+    background-color: cornflowerblue;
+    color: white;
+    padding: 12px;
+    width: 90px;
+    margin: 0 10px;
+    cursor: pointer;
+    height: 60px;
+  }
+
+  .hidden {
+    display: none;
+ 
+  }
+
+  .form-message{
+    width: 70em;
+  }
+
+  .form-input{
+    margin-top: 10px;
+    align-items: flex-start;
+    display: flex;
+  }
+
+  .form-submit{
+    margin-top: 30px;
+  }
+
+
 
 
 
