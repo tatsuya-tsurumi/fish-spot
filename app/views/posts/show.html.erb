@@ -13,11 +13,12 @@
         </div>
 
         <%if user_signed_in?%>
+        <div class= "positon">
         <%= link_to 'チャットルーム', post_messages_path(@post) %>
         <% if current_user == @post.user %>
         <%= link_to '編集', edit_post_path %>
         <%= link_to '削除', post_path, method: :delete %>
         <% end %>
-
+        </div>
 
         <%end%>
