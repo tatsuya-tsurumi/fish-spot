@@ -1,3 +1,94 @@
 // Place all the styles related to the messages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.post_header{
+  display: flex;
+  justify-content: space-between;
+  font-size: 25px;
+  background-color: #070d13e5;
+  align-items: center;
+  position: fixed;
+  width: 100vw;
+  color: white;
+}
+
+
+
+
+
+
+.positon :hover{
+  background-color: cornflowerblue;
+
+}
+
+.messages {
+  background-color: #d8d3d3;
+  height: calc(100vh - 100px - 90px);
+  padding: 46px 40px 0;
+  overflow: scroll;
+}
+
+.message {
+  margin: 10px 0 0 0;
+}
+
+.upper-message{
+  display: flex;
+}
+
+.message-user {
+  color: #434a54;
+  font-size: 16px;
+}
+
+.message-date {
+  color: #999;
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+.lower-message {
+  margin-top: 10px;
+}
+
+.message-content {
+  color: #434a54;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+
+
+
+
+
+.form-image {
+  font-size: 12px;
+  background-color: cornflowerblue;
+  color: white;
+  padding: 12px;
+  width: 90px;
+  margin: 0 10px;
+  cursor: pointer;
+  height: 60px;
+}
+
+.hidden {
+  display: none;
+
+}
+
+.form-message{
+  width: 70em;
+}
+
+.form-input{
+  margin-top: 80px;
+  align-items: flex-start;
+  display: flex;
+}
+
+.form-submit{
+  margin-top: 30px;
+}

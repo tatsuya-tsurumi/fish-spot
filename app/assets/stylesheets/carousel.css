@@ -205,9 +205,9 @@ text-decoration: none;
 
   }*/
 
-  .posts_all{
-    font-size: 20px;
-    font-weight: bold;
+  .post_all :hover{
+    background-color: cornflowerblue;
+
   }
 
   .pictue{
@@ -248,45 +248,8 @@ text-decoration: none;
     
   }
 
-  .room_header{
-    display: flex;
-    justify-content: space-between;
-    font-size: 30px;
-    background-color: #070d13e5;
-    align-items: center;
-  }
-
-  .room_header p {
-    color: red;
-  }
-
-  .header_left{
-    color: white;
-    font-size: 20px;
-  }
-
-  .purchase-btns {
-    width: 100px;
-    height: 80px;
-    background: blue;
-    text-align: center;
-    border-radius: 4%;
-    bottom: 627px;
-    right: 0px;
-    position: fixed;
-    padding: 15px;
-    text-decoration: none;
-    align-items: flex-end;
-  }
   
-  .purchase-btn-texts {
-    color: white;
-    display: block;
-    font-size: 30px;
-    align-items: flex-end;
-    
-    margin-bottom: 5px;
-  }
+
 
 
 
