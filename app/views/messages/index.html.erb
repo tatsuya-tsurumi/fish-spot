@@ -1,29 +1,17 @@
-<div class= "room_header">
-<h1 class= "header_left">ルーム名：<%= @post.title %></h1>
+<div class= "post_header">
+ルーム名：<%= @post.title %>
 
 
-<%= link_to(post_path(@post), class: 'purchase-btns') do %>
-      <span class='purchase-btn-texts'>退出</span>
-      <% end %>
+<%= link_to '退出', post_path(@post,class:"message_link") %>
+      
+      
 </div>
 
-<div class="message-top">
-   
-   <div class="message-upper">
-  <% @messages.each do |message| %>
-  <div class="message-list">
-    <%= message.created_at.strftime("%Y-%m-%d %H:%M:%S") %></p>
-   
-   <%= message.user.nickname%>
-   
-   <%= message.comment%>
-
-   </div>
- 
-   
+<div class="messages">
+  <%= render partial: 'message', collection: @messages %>
 </div>
 
-<% end %>
+
 <%= form_with model: [@post,@message], class: 'form', local: true do |f| %>
 <div class="form-input">
     <p><%= f.text_area :comment, class: 'form-message', placeholder: 'type a message' %></p>
