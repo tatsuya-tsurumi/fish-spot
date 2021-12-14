@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>Google Maps API サンプル</title>
+  </head>
+  <body>
+    <p>瑞穂運動場です。</p>
+
+    <div id="map" ></div>
+
+    <script type="text/javascript">
+    function initMap() {
+      var opts = {
+        zoom: 13,
+        center: new google.maps.LatLng(40.55087, 141.51825)
+      };
+      var map = new google.maps.Map(document.getElementById("map"), opts);
+      
+    }
+    </script>
+
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPJIUGbmXkk3oaFokKjBKaiRH7aHlrqkQ&callback=initMap">
+    </script>
+  </body>
+</html>
