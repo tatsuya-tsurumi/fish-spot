@@ -45,6 +45,10 @@ class PostsController < ApplicationController
     redirect_to root_path
   end
 
+  def chart
+    @post = Post.all
+  end
+
   private
 
   def post_params
