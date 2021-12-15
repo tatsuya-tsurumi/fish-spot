@@ -181,10 +181,12 @@ body {
 
 .chart_index{
   display: flex;
+  overflow: scroll;
 }
 
 .chart_all{
-  margin-left: 20px;
+ margin-left: 10px  ;
+
 }
   
 
