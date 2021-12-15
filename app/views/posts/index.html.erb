@@ -3,17 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   
-
-
-    
     <!-- Custom styles for this template -->
-   
   </head>
+
   <body>
-    
-
-
 <main>
 <%= render "shared/header" %>
   <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -22,7 +15,6 @@
       <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
       <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
       <li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
-      
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -78,60 +70,42 @@
   ================================================== -->
   <!-- Wrap the rest of the page in another container to center all the content. -->
 
-  <div class="container marketing">
-
+  
     <!-- Three columns of text below the carousel -->
-   <div class="body">
-       <div class="tokuchou">
+   <div class="body-point">
+       <div class="feature">
          <h2><span class="blue">fish-spot</span>の特徴</h2>  
-       
       </div>
-      
-    </div>
+   </div>
         <div class="flat-body">
         <div class="col-lg-4">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" ><%= image_tag "fishing_fish_man.png", size: "450x400"  %></svg>
+          <svg class="img"  ><%= image_tag "fishing_fish_man.png", size: "450x400"  %></svg>
           <h2 class="jouhou">情報共有をしよう！</h2>
           <p class="font-size">釣った魚をリアルタイムで報告し合える</p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" ><%= image_tag "fishing_spot.png", size: "450x400"  %></svg>
+          <svg class="img" width="140" height="140" ><%= image_tag "fishing_spot.png", size: "450x400"  %></svg>
           <h2 class="jouhou">釣りスポットを共有しよう！</h2>
           <p class="font-size">八戸近郊の釣りスポット、おすすめの時間を共有し合える</p>
         </div>
         </div>
     <!-- /.row -->
-
-
-
     <!-- START THE FEATURETTES -->
-    <div class="yoko">
-   <%= render partial: 'post' %>
+  <div class="beside">
+    <div class="fish-flat">
+      <%= render partial: 'post' %>
     </div>
-   <div class="fish-flat">
-      
-    
+   
       <div class="row">
-        <h2 class="heading">地図機能を実装予定</h2>
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300" height="300" ><rect width="80%" height="80%" fill="#eee"/></svg>
+          <%= render "shared/map"%>
       </div>
-      
     </div>
-
-  
-
     <!-- /END THE FEATURETTES -->
-
   </div><!-- /.container -->
-
-
   <!-- FOOTER -->
  <%= render "shared/footer" %>
+ 
 </main>
-
-
-    
-
       
   </body>
 </html>
