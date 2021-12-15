@@ -91,12 +91,16 @@ text-decoration: none;
 
 body {
   background-color: rgb(219, 216, 212) !important;
+  min-height: 100vh; /* ←コンテンツの高さの最小値＝ブラウザの高さに指定 */
+  position: relative;/* ←相対位置 */
+  padding-bottom: 60px; /* ←フッターの高さを指定 */
+  box-sizing: border-box;
 } 
 
 .image{
   width: 140px; 
   height: 140px;
-  border: 10px solid #00cc00;;
+  border: 10px solid #00cc00;
 }
 
 
@@ -159,10 +163,13 @@ body {
     
   }
 
-  .contain{
-    background-color: rgb(23, 23, 29);
+  footer{
+    background-color: rgb(23, 23, 29)!important;
     height: 6vh;
     align-items: center ;
+    position: absolute;/* ←絶対位置 */
+    bottom: 0;
+    width: 100%;
   }
 
   .navbar{
@@ -172,7 +179,13 @@ body {
   }
 
 
-  
+.chart_index{
+  display: flex;
+}
+
+.chart_all{
+  margin-left: 20px;
+}
   
 
 
