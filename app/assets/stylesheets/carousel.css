@@ -6,14 +6,18 @@
 .log{
   align-items: center;
   margin-left: 10px;
-  font-size: 20px;
+  font-size: 25px;
 text-decoration: none;
 }
 
 .navbar-brant{
   font-family: cursive;
-  font-size: 20px;
+  font-size: 25px;
   color: white;
+}
+
+.flat-header{
+  font-size: 25px;
 }
 
 /* CUSTOMIZE THE CAROUSEL
@@ -59,8 +63,10 @@ text-decoration: none;
 .body-point{
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   background-color: #111111;
+  width: 100vw;
+  height: 7vh;
 }
 
 .blue{
@@ -75,9 +81,23 @@ text-decoration: none;
 
 .flat-body{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
+.footer_text{
+  color: white;
+  font-size: 25px;
+}
+
+body {
+  background-color: rgb(219, 216, 212) !important;
+} 
+
+.image{
+  width: 140px; 
+  height: 140px;
+  border: 10px solid #00cc00;;
+}
 
 
 
@@ -127,17 +147,30 @@ text-decoration: none;
     display: block;
   }
 
-  #map{
-    width: 30rem;
-    height: 50rem;
+  #gmap{
+    width: 40rem;
+    height: 62rem;
   }
 
   .beside{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     
   }
+
+  .contain{
+    background-color: rgb(23, 23, 29);
+    height: 6vh;
+    align-items: center ;
+  }
+
+  .navbar{
+    background-color: rgb(23, 23, 29);
+    height: 6vh;
+    
+  }
+
 
   
   
