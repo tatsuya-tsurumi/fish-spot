@@ -20,5 +20,61 @@
  */
 
 
+ /* header表記 */
+ .navbar-brant{
+  font-family: cursive;
+  font-size: 25px;
+  color: white;
+}
+
+.flat-header{
+  font-size: 25px;
+}
+
+.log{
+  align-items: center;
+  margin-left: 10px;
+  font-size: 25px;
+text-decoration: none;
+}
+
+.navbar{
+  background-color: rgb(23, 23, 29);
+  height: 6vh;
+}
+
+/* body表記 */
+
+body {
+  background-color: rgb(219, 216, 212) !important;
+  min-height: 100vh; /* ←コンテンツの高さの最小値＝ブラウザの高さに指定 */
+  position: relative;/* ←相対位置 */
+  padding-bottom: 60px; /* ←フッターの高さを指定 */
+  box-sizing: border-box;
+} 
+
+
+ /* footer表記 */
+
+ footer{
+  background-color: rgb(23, 23, 29)!important;
+  height: 6vh;
+  align-items: center ;
+  position: absolute;/* ←絶対位置 */
+  bottom: 0;
+  width: 100%;
+}
+
+ .float-end{
+  font-family: cursive;
+}
+
+.footer_text{
+  color: white;
+  font-size: 25px;
+}
+
+
+
 
 

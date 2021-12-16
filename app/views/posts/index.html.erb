@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Custom styles for this template -->
+    
   </head>
 
   <body>
 <main>
-<%= render "shared/header" %>
+<%# 上部の写真表記 %>
+
   <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
     <ol class="carousel-indicators">
       <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
@@ -64,14 +65,8 @@
       <span class="visually-hidden">Next</span>
     </a>
   </div>
-
-
-  <!-- Marketing messaging and featurettes
-  ================================================== -->
-  <!-- Wrap the rest of the page in another container to center all the content. -->
-
   
-    <!-- Three columns of text below the carousel -->
+    <%# 特徴表記 %>
    <div class="body-point">
        <div class="feature">
          <h2><span class="blue">fish-spot</span>の特徴</h2>  
@@ -82,15 +77,15 @@
           <svg class="img"  ><%= image_tag "fishing_fish_man.png", size: "450x400"  %></svg>
           <h2 class="jouhou">情報共有をしよう！</h2>
           <p class="font-size">釣った魚をリアルタイムで報告し合える</p>
-        </div><!-- /.col-lg-4 -->
+        </div>
         <div class="col-lg-4">
           <svg class="img" width="140" height="140" ><%= image_tag "fishing_spot.png", size: "450x400"  %></svg>
           <h2 class="jouhou">釣りスポットを共有しよう！</h2>
           <p class="font-size">八戸近郊の釣りスポット、おすすめの時間を共有し合える</p>
         </div>
         </div>
-    <!-- /.row -->
-    <!-- START THE FEATURETTES -->
+    
+   <%# 投稿一覧、地図表記 %>
   <div class="beside">
     <div class="fish-flat">
       <%= render partial: 'post' %>
@@ -100,12 +95,14 @@
           <%= render "shared/map"%>
       </div>
     </div>
-    <!-- /END THE FEATURETTES -->
-  </div><!-- /.container -->
-  <!-- FOOTER -->
- <%= render "shared/footer" %>
  
 </main>
-      
+
+   <%if user_signed_in? %>
+      <%= link_to(new_post_path, class: 'purchase-btn') do %>
+      <span class='purchase-btn-text'>新規投稿</span>
+      <% end %>
+   <% end %>
+
   </body>
 </html>
