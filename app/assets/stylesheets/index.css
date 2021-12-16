@@ -4,10 +4,7 @@
   margin-bottom: 4rem;
  
 }
-/* Since positioning the image, we need to help out the caption */
 
-
-/* Declare heights because of positioning of img element */
 .carousel-item {
   height: 32rem;
 
@@ -101,23 +98,7 @@
 }
 
 
-  /* _post.html */
-  .flex{
-    flex-direction: column;
-    align-items: flex-start;
-    text-decoration: underline;
-    display: flex;
-  }
-
-   /* chart.html */
-  .chart_index{
-    display: flex;
-    overflow: scroll;
-  }
   
-  .chart_all{
-   margin-left: 10px  ;
-  }
 
     /* shared_map.html */
   #gmap{
