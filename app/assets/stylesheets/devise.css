@@ -1,0 +1,23 @@
+.form_field{
+  display: flex;
+  justify-content: center;
+  margin-left: 300px;
+  
+}
+
+.login_link{
+  margin-left: 415px;
+}
+
+.back_color{
+  margin-left: 415px;
+}
+
+.email_field{
+  width: 370px;
+}
+
+.password_field{
+  width: 370px;
+
+}
