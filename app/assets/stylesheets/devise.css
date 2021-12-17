@@ -1,16 +1,17 @@
-.form_field{
+.form_fields{
   display: flex;
   justify-content: center;
-  margin-left: 300px;
-  
+  margin-top: 20px;
 }
 
 .login_link{
-  margin-left: 415px;
+  margin-left: 535px;
+  margin-top: 15px;
+  font-size: 20px;
 }
 
 .back_color{
-  margin-left: 415px;
+  margin-left: 535px;
 }
 
 .email_field{
@@ -20,4 +21,17 @@
 .password_field{
   width: 370px;
 
+}
+
+.field{
+  margin-top: 15px;
+}
+
+.login_links{
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.actions{
+  margin-top: 15px;
 }
