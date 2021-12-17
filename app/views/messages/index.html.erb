@@ -14,7 +14,7 @@
 
 <%= form_with model: [@post,@message], class: 'form', local: true do |f| %>
 <div class="form-input">
-    <p><%= f.text_area :comment, class: 'form-message', placeholder: 'type a message' %></p>
+    <p><%= f.text_area :comment, class: 'form-message', placeholder: 'メッセージを入力' %></p>
     <label class="form-image">
       <span class="image-file">画像を添付できます</span>
       <p><%= f.file_field :image, class:"hidden" %></p>
