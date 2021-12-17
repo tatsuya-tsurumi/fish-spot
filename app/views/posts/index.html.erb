@@ -74,27 +74,38 @@
    </div>
         <div class="flat-body">
         <div class="col-lg-4">
-          <svg class="img"  ><%= image_tag "fishing_fish_man.png", size: "450x400"  %></svg>
+          <svg class="img"  ><%= image_tag "fishing_fish_man.png", size: "550x350"  %></svg>
           <h2 class="jouhou">情報共有をしよう！</h2>
           <p class="font-size">釣った魚をリアルタイムで報告し合える</p>
         </div>
-        <div class="col-lg-4">
-          <svg class="img" width="140" height="140" ><%= image_tag "fishing_spot.png", size: "450x400"  %></svg>
+        <div class="col-lg-5">
+          <svg class="img" ><%= image_tag "e00f42e8ff127556b676fb31f7309396.png", size: "550x350"  %></svg>
           <h2 class="jouhou">釣りスポットを共有しよう！</h2>
           <p class="font-size">八戸近郊の釣りスポット、おすすめの時間を共有し合える</p>
         </div>
         </div>
     
+    <div class="border"></div>
+    
    <%# 投稿一覧、地図表記 %>
   <div class="beside">
+   
     <div class="fish-flat">
       <%= render partial: 'post' %>
     </div>
+
+     <%= link_to  'スポット一覧', chart_posts_path(@post), class: "body_chart" %></p> 
+
+    <div class="border"></div>
+  
    
-      <div class="row">
+      <div class="google_map">
          <%= render partial: 'map' %>
+         <%#= render partial: 'test' %>
       </div>
-    </div>
+  </div>
+    
+
  
 </main>
 

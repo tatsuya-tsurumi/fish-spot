@@ -35,7 +35,7 @@
   justify-content: center;
   align-items: center;
   background-color: #111111;
-  width: 100vw;
+  width: 100%;
   height: 7vh;
 }
 
@@ -51,26 +51,32 @@
 .flat-body{
   display: flex;
   justify-content: space-around;
+  
 }
 
-.image{
-  width: 140px; 
-  height: 140px;
-  border: 10px solid #00cc00;
+.border{
+  border:1px solid black;
 }
 
 
 /*投稿一覧、地図表記 */
 
 .fish-flat{
-  display: block;
+  display: flex ;
+  justify-content: space-around;
 }
 
-.beside{
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+.body_chart{
+  font-size: 30px;
+  margin-left: 85px;
 }
+
+.google_map{
+  margin-top: 30px;
+  margin-left: 70px;
+}
+
+
 
 /* 新規投稿ボタン */
 
@@ -100,10 +106,11 @@
 
   
 
-    /* shared_map.html */
-  #gmap{
+    /* map.html */
+  #map{
     width: 40rem;
     height: 62rem;
+    margin-bottom: 50px;
   }
 
 
@@ -143,9 +150,7 @@
       width: 250%;
     }
 
-    .jouhou{
-      width: 200%;
-    }
+     
   }
   
   

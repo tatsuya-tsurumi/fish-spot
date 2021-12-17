@@ -4,11 +4,14 @@
 
 /* _post.html */
 .flex{
-  flex-direction: column;
   align-items: flex-start;
   text-decoration: underline;
-  display: flex;
+ margin-right: 50px;
+ margin-left: 50px;
+ margin-top: 50px;
 }
+
+
 
  /* chart.html */
 .chart_index{
@@ -18,4 +21,43 @@
 
 .chart_all{
  margin-left: 10px  ;
+}
+
+ /* _test.html */
+
+
+#map{
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.firstHeading{
+  font-size: 20px;
+}
+
+ /* _new.html */
+
+.inner{
+  display: flex;
+  justify-content: center;
+}
+
+.form_wrapper{
+  margin-left: 550px;
+  margin-bottom: 20px;
+}
+
+#title{
+  width: 500px;
+}
+
+.form_field{
+  width: 600px;
+  margin-bottom: 20px;
+}
+
+
+.form_btn{
+  margin-top: 20px;
+  margin-left: 520px;
 }

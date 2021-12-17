@@ -4,35 +4,36 @@
 
   <div class="field">
     <%= f.label :title, "タイトル" %><br />
-    <%= f.text_field :title, id:"title" %>
+    <%= f.text_field :title, class:"form_field" %>
   </div>
 
   <div class="field">
     <%= f.label :aimble_fish, "魚の種類" %><br />
-    <%= f.text_field :aimble_fish, class: :text_area, id:"aimable_fish" %>
+    <%= f.text_field :aimble_fish, class:"form_field", id:"aimable_fish" %>
   </div>
 
   <div class="field">
     <%= f.label :time_zone_id, "時間帯" %><br />
-    <%= f.collection_select(:time_zone_id, TimeZone.all, :id, :name, {}, {class: "foo"}) %>
+    <%= f.collection_select(:time_zone_id, TimeZone.all, :id, :name, {}, {class:"form_field"}) %>
   </div>
 
   <div class="field">
     <%= f.label :trick, "おすすめの仕掛け（任意）" %><br />
-    <%= f.text_field :trick, class: :text_area, id:"trick" %>
+    <%= f.text_field :trick, class:"form_field", id:"trick" %>
   </div>
 
   <div class="field">
     <%= f.label :comment, "場所の紹介（任意）" %><br />
-    <%= f.text_area :comment, class: :text_area, id:"comment", placeholder:"一言メッセージ" %>
+    <%= f.text_area :comment, class:"form_field", id:"comment", placeholder:"一言メッセージ" %>
   </div>
 
-  <div class="field">
+  <div class="field_image">
     <%= f.label :image, "スポットの画像" %><br />
     <%= f.file_field :image, id:"image" %>
   </div>
 
-  <div class="actions">
-    <%= f.submit "保存する", class: :form__btn  %>
+  <div class="field">
+    <%= f.submit "保存する", class: "form_btn"  %>
   </div>
+</div>
 <% end %>
