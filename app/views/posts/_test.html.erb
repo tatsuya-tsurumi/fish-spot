@@ -10,10 +10,18 @@ mapTypeId: google.maps.MapTypeId.ROADMAP
 };
 var map = new google.maps.Map(document.getElementById('map'),myOptions);
 var markers = [
-    ['八戸港フェリー埠頭付近',40.5493,141.5067],
-    ['館鼻岩壁',40.5297,141.5258,],
-    ['蕪島神社',40.5394,141.5582],
-    ['三沢ビードルビーチ',40.6771,141.4381]
+    ['八戸港フェリー埠頭付近'+'<p> <a href="http://localhost:3000/posts/6">'+
+          '詳細はこちら</a> '+
+          '</p>',40.5493,141.5067],
+    ['館鼻岩壁'+'<p> <a href="http://localhost:3000/posts/5">'+
+          '詳細はこちら</a> '+
+          '</p>',40.5297,141.5258,],
+    ['蕪島神社'+'<p> <a href="http://localhost:3000/posts/7">'+
+          '詳細はこちら</a> '+
+          '</p>',40.5394,141.5582],
+    ['三沢ビードルビーチ'+'<p> <a href="http://localhost:3000/posts/8">'+
+          '詳細はこちら</a> '+
+          '</p>',40.6771,141.4381]
     ];
 for (var i = 0; i < markers.length; i++) {
 var name = markers[i][0];
