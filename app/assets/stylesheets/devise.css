@@ -1,7 +1,7 @@
 .form_fields{
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+
 }
 
 .login_link{
@@ -23,7 +23,7 @@
 
 }
 
-.field{
+.fields{
   margin-top: 15px;
 }
 
