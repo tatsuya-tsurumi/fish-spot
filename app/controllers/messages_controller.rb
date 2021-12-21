@@ -11,6 +11,7 @@ class MessagesController < ApplicationController
     if @message.save
       redirect_to post_messages_path(@post)
     else
+      @messages = @post.messages.includes(:user)
       render :index
     end
   end

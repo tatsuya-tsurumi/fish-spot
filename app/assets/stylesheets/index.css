@@ -1,0 +1,156 @@
+
+/* 上部の写真表記 */
+.carousel {
+  margin-bottom: 4rem;
+ 
+}
+
+.carousel-item {
+  height: 32rem;
+
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+ 
+}
+.carousel-control-next{
+  height: 400px;
+  margin-top: 100px;
+}
+
+.carousel-control-prev{
+  height: 400px;
+  margin-top: 100px;
+}
+
+
+
+/*  特徴表記 */
+.body-point{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111111;
+  width: 100%;
+  height: 7vh;
+}
+
+.feature{
+  color: white;
+}
+
+.blue{
+  font-family: cursive;
+  color: white;
+}
+
+.flat-body{
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.border{
+  border:1px solid black;
+}
+
+
+/*投稿一覧、地図表記 */
+
+.fish-flat{
+  display: flex ;
+  justify-content: space-around;
+}
+
+.body_chart{
+  font-size: 30px;
+  margin-left: 85px;
+}
+
+.google_map{
+  margin-top: 30px;
+  margin-left: 70px;
+}
+
+
+
+/* 新規投稿ボタン */
+
+.purchase-btn {
+  width: 150px;
+  height: 80px;
+  background: blue;
+  text-align: center;
+  border-radius: 4%;
+  bottom: 47px;
+  right: 10px;
+  position: fixed;
+  padding: 15px;
+  text-decoration: none;
+  align-items: flex-end;
+}
+
+.purchase-btn-text {
+  color: white;
+  display: block;
+  font-size: 30px;
+  align-items: flex-end;
+  
+  margin-bottom: 5px;
+}
+
+
+  
+
+    /* map.html */
+  #map{
+    width: 40rem;
+    height: 62rem;
+    margin-bottom: 50px;
+  }
+
+
+
+
+
+
+
+
+/* スマホ用設定 */
+
+@media (min-width: 40em) {
+ 
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+}
+
+  
+  @media (max-width: 599px) {
+    .carousel-caption{
+      font-size: 20px;
+    }
+   
+    .navbar{
+      width: 80%;
+    }
+
+    .flat-body{
+      display: block;
+      width: 70%;
+    }
+    .font-size{
+      width: 250%;
+    }
+
+     
+  }
+  
+  

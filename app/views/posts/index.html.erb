@@ -2,13 +2,14 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Custom styles for this template -->
+    <meta name="viewport" content="width=device-width, initial-scale=0.2" />
+    
   </head>
 
   <body>
 <main>
-<%= render "shared/header" %>
+<%# 上部の写真表記 %>
+
   <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
     <ol class="carousel-indicators">
       <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
@@ -18,7 +19,7 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <svg class="bd-placeholder-img"    ><%= image_tag "IMG_0292.jpg", size:"100x100"%></svg>
+        <%= image_tag "IMG_0292.jpg"%>
         <div class="container">
           <div class="carousel-caption">
             <p>館鼻漁港</p>
@@ -27,7 +28,7 @@
       </div>
 
       <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="10%"    ><%= image_tag "IMG_0293.jpg"%></svg>
+        <%= image_tag "IMG_0293.jpg"%>
         <div class="container">
           <div class="carousel-caption">
             <p>館鼻漁港 漁船</p>
@@ -36,7 +37,7 @@
       </div>
       
       <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="10%"    ><%= image_tag "IMG_0286.jpg"%></svg>
+        <%= image_tag "IMG_0286.jpg"%>
         <div class="container">
           <div class="carousel-caption ">
             <p>フェリー埠頭</p>
@@ -45,7 +46,7 @@
       </div>
 
       <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="10%"    ><%= image_tag "IMG_0287.jpg"%></svg>
+        <%= image_tag "IMG_0287.jpg"%>
         <div class="container">
           <div class="carousel-caption ">
             <p>蕪嶋神社</p>
@@ -64,14 +65,8 @@
       <span class="visually-hidden">Next</span>
     </a>
   </div>
-
-
-  <!-- Marketing messaging and featurettes
-  ================================================== -->
-  <!-- Wrap the rest of the page in another container to center all the content. -->
-
   
-    <!-- Three columns of text below the carousel -->
+    <%# 特徴表記 %>
    <div class="body-point">
        <div class="feature">
          <h2><span class="blue">fish-spot</span>の特徴</h2>  
@@ -79,33 +74,46 @@
    </div>
         <div class="flat-body">
         <div class="col-lg-4">
-          <svg class="img"  ><%= image_tag "fishing_fish_man.png", size: "450x400"  %></svg>
+          <svg class="img"  ><%= image_tag "fishing_fish_man.png", size: "550x350"  %></svg>
           <h2 class="jouhou">情報共有をしよう！</h2>
           <p class="font-size">釣った魚をリアルタイムで報告し合える</p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <svg class="img" width="140" height="140" ><%= image_tag "fishing_spot.png", size: "450x400"  %></svg>
+        </div>
+        <div class="col-lg-5">
+          <svg class="img" ><%= image_tag "e00f42e8ff127556b676fb31f7309396.png", size: "550x350"  %></svg>
           <h2 class="jouhou">釣りスポットを共有しよう！</h2>
           <p class="font-size">八戸近郊の釣りスポット、おすすめの時間を共有し合える</p>
         </div>
         </div>
-    <!-- /.row -->
-    <!-- START THE FEATURETTES -->
+    
+    <div class="border"></div>
+    
+   <%# 投稿一覧、地図表記 %>
   <div class="beside">
+   
     <div class="fish-flat">
       <%= render partial: 'post' %>
     </div>
+
+     <%= link_to  'スポット一覧', chart_posts_path(@post), class: "body_chart" %></p> 
+
+    <div class="border"></div>
+  
    
-      <div class="row">
-          <%= render "shared/map"%>
+      <div class="google_map">
+         <%#= render partial: 'map' %>
+         <%= render partial: 'test' %>
       </div>
-    </div>
-    <!-- /END THE FEATURETTES -->
-  </div><!-- /.container -->
-  <!-- FOOTER -->
- <%= render "shared/footer" %>
+  </div>
+    
+
  
 </main>
-      
+
+   <%if user_signed_in? %>
+      <%= link_to(new_post_path, class: 'purchase-btn') do %>
+      <span class='purchase-btn-text'>新規投稿</span>
+      <% end %>
+   <% end %>
+
   </body>
 </html>

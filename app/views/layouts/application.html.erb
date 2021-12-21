@@ -33,22 +33,18 @@
             <%= link_to '新規登録', new_user_registration_path, class: "log" %>
           </div>
       <% end %>
-
+    </div>
 
   </header>
 
   <body>
     <%= yield %>
-   
-  
-
-
   </body>
 
   <footer >
  
     <p class="float-end"><%= link_to 'fish-spot', root_path,  class: "footer_text" %></p>
-    <p> <a class="footer_text" href="#">特徴</a> <%= link_to  '投稿一覧', chart_posts_path(@post), class: "footer_text" %></p> 
+    <%= link_to  'スポット  一覧', chart_posts_path(@post), class: "footer_text" %></p> 
      
   </footer>
 

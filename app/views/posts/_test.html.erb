@@ -1,0 +1,47 @@
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPJIUGbmXkk3oaFokKjBKaiRH7aHlrqkQ&callback=initMap" async></script>
+
+
+<script type="text/javascript">
+function initMap() {
+var myOptions = {
+zoom: 14,
+center: new google.maps.LatLng(40.5352, 141.5131),
+mapTypeId: google.maps.MapTypeId.ROADMAP
+};
+var map = new google.maps.Map(document.getElementById('map'),myOptions);
+var markers = [
+    ['フェリー埠頭'+'<p> <a href="http://localhost:3000/posts/6">'+
+          '詳細はこちら</a> '+
+          '</p>',40.5493,141.5067],
+    ['館鼻岩壁'+'<p> <a href="http://localhost:3000/posts/5">'+
+          '詳細はこちら</a> '+
+          '</p>',40.5297,141.5258,],
+    ['蕪島神社'+'<p> <a href="http://localhost:3000/posts/7">'+
+          '詳細はこちら</a> '+
+          '</p>',40.5394,141.5582],
+    ['三沢ビードルビーチ'+'<p> <a href="http://localhost:3000/posts/8">'+
+          '詳細はこちら</a> '+
+          '</p>',40.6771,141.4381]
+    ];
+for (var i = 0; i < markers.length; i++) {
+var name = markers[i][0];
+var latlng = new google.maps.LatLng(markers[i][1],markers[i][2]);
+createMarker(latlng,name,map)
+}
+}
+function createMarker(latlng,name,map)
+{
+var infoWindow = new google.maps.InfoWindow({
+    content: '<div class="sample">TAM 大阪</div>'
+
+    });
+var marker = new google.maps.Marker({position: latlng,map: map});
+google.maps.event.addListener(marker, 'click', function() {
+infoWindow.setContent(name);
+infoWindow.open(map,marker);
+
+});
+} 
+
+</script>
+<div id="map" style="width:1200px; height:500px;"></div>

@@ -1,0 +1,37 @@
+.form_fields{
+  display: flex;
+  justify-content: center;
+
+}
+
+.login_link{
+  margin-left: 535px;
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.back_color{
+  margin-left: 535px;
+}
+
+.email_field{
+  width: 370px;
+}
+
+.password_field{
+  width: 370px;
+
+}
+
+.fields{
+  margin-top: 15px;
+}
+
+.login_links{
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.actions{
+  margin-top: 15px;
+}
