@@ -129,6 +129,10 @@ margin:0 5px;
   border:1px solid black;
 }
 
+.jouhou{
+  margin-top: 20px;
+}
+
 
 /*投稿一覧、地図表記 */
 
@@ -154,7 +158,7 @@ margin:0 5px;
 .purchase-btn {
   width: 150px;
   height: 80px;
-  background: blue;
+  background: rgba(48, 88, 117, 0.712);
   text-align: center;
   border-radius: 4%;
   bottom: 47px;

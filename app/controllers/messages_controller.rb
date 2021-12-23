@@ -2,7 +2,7 @@ class MessagesController < ApplicationController
   def index
     @message = Message.new
     @post = Post.find(params[:post_id])
-    @messages = @post.messages.includes(:user)
+    @messages = @post.messages.includes(:user)#.order('created_at DESC')
   end
 
   def create

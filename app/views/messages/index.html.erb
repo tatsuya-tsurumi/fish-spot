@@ -1,8 +1,9 @@
+
 <div class= "post_header">
 ルーム名：<%= @post.title %>
 
 
-<%= link_to '退出', post_path(@post,class:"message_link") %>
+
       
       
 </div>
@@ -14,9 +15,9 @@
 
 <%= form_with model: [@post,@message], class: 'form', local: true do |f| %>
 <div class="form-input">
-    <p><%= f.text_area :comment, class: 'form-message', placeholder: 'メッセージを入力' %></p>
+    <p><%= f.text_area :comment, class: 'form-message', placeholder: 'メッセージ入力 or 画像添付' %></p>
     <label class="form-image">
-      <span class="image-file">画像を添付できます</span>
+      <span class="image-file">画像</span>
       <p><%= f.file_field :image, class:"hidden" %></p>
     </label>
 
@@ -24,3 +25,8 @@
  
 <% end %>
 </div>
+ 
+      <%= link_to(post_path(@post), class: 'exit_link') do %>
+      <span class='exit-btn-text'>退出</span>
+      <% end %>
+ 

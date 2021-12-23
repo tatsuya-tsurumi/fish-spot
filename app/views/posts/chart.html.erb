@@ -1,14 +1,18 @@
+    <div class="chart_indexs" >
 <% @post.each do |post| %>
       <div class="chart_index" >
       
         <%= link_to   post_path(post.id) do  %> 
-        <p class="chart_all">タイトル：<%= post.title %></p>
-        <p><%#= image_tag post.image, size:"400x400" %></p>
-             <% end %>
-        <p class="chart_all">[魚の種類：<%= post.aimble_fish%>
         
-        <p class="chart_all">投稿者：<%=post.user.nickname%>さん]</p>
+        <p class="chart_all">タイトル：<%= post.title %></p>
+        <p><%= image_tag post.image, size:"300x200" %></p>
+             <% end %>
+        <p class="chart_point">[　魚の種類：<%= post.aimble_fish%>
+        
+        <p class="chart_point">、　投稿者：<%=post.user.nickname%>さん]</p>
 
       </div>
       
 <% end %>
+
+ </div>
