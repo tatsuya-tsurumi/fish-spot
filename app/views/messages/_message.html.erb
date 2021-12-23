@@ -2,7 +2,7 @@
   <div class="upper-message">
   
     <div class="message-user">
-      <%= message.user.nickname %>
+      <%= message.user.nickname %>さん
     </div>
 
     <div class="message-date">
@@ -18,3 +18,5 @@
     <%= image_tag message.image.variant(resize: '500x500'), class: 'message-image' if message.image.attached? %>
   
   </div>
+
+  

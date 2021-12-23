@@ -14,6 +14,14 @@
 
 
  /* chart.html */
+
+ .chart_indexs{
+   display: flex;
+   flex-wrap: wrap; 
+   justify-content: space-between;
+ }
+
+
 .chart_index{
   display: flex;
   overflow: scroll;
@@ -66,10 +74,11 @@
 
  .posts_all{
    margin-left: 500px;
+   white-space: pre-wrap;
  }
 
  .show_picture{
-   margin-left: 350px;
+   margin-left: 450px;
  }
 
  .position :hover{

@@ -24,10 +24,12 @@
   font-family: cursive;
   font-size: 25px;
   color: white;
+  
 }
 
 .flat-header{
   font-size: 25px;
+  
 }
 
 .log{
@@ -41,6 +43,7 @@ color: white;
 .navbar{
   background-color: rgb(23, 23, 29);
   height: 6vh;
+ 
 }
 
 /* body表記 */
