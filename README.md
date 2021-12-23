@@ -66,6 +66,9 @@ belongs_to :user
 belongs_to :post
 
 # アプリケーション名
+　 地図機能
+
+
 -  <span style="font-family: cursive">fish spot</span>
 
 # アプリケーション概要
@@ -141,5 +144,6 @@ belongs_to :post
 - % cd fish-spot.git
 - % bundle install
 - % yarn install
+
 
 
