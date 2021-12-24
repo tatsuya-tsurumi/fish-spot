@@ -50,5 +50,5 @@ test:
 production:
   <<: *default
   database: fish_spot_production
-  username: fish_spot
+  username: root
   password: <%= ENV['FISH_SPOT_DATABASE_PASSWORD'] %>
