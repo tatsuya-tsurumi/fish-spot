@@ -4,7 +4,7 @@ class PostsController < ApplicationController
   before_action :validates_post, only: [:edit, :destroy]
 
   def index
-    @post = Post.order('created_at ASC').limit(2) #最新の２つの投稿を載せる場合に使う
+    @post = Post.order('created_at DESC').limit(2) #最新の２つの投稿を載せる場合に使う
   end
 
   def new
