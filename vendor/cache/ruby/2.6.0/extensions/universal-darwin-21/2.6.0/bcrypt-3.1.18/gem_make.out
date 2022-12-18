@@ -1,0 +1,12 @@
+current directory: /Users/tsurumitatsuya/projects/fish-spot/vendor/cache/ruby/2.6.0/gems/bcrypt-3.1.18/ext/mri
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0 -r ./siteconf20221217-37509-10iys9j.rb extconf.rb
+creating Makefile
+
+current directory: /Users/tsurumitatsuya/projects/fish-spot/vendor/cache/ruby/2.6.0/gems/bcrypt-3.1.18/ext/mri
+make "DESTDIR=" clean
+
+current directory: /Users/tsurumitatsuya/projects/fish-spot/vendor/cache/ruby/2.6.0/gems/bcrypt-3.1.18/ext/mri
+make "DESTDIR="
+make: *** No rule to make target `/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/include/ruby-2.6.0/universal-darwin21/ruby/config.h', needed by `bcrypt_ext.o'.  Stop.
+
+make failed, exit code 2
